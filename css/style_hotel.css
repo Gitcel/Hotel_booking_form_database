@@ -1,0 +1,182 @@
+:root {
+
+    --font-family: 'PT Sans Narrow', sans-serif;
+
+    --background-body: linear-gradient(90deg, rgb(220, 200, 200), rgb(220, 200, 200), rgb(170, 150, 150), rgb(170, 150, 150));
+    --background-container-left: linear-gradient(45deg, rgba(100, 100, 200, 1), rgba(100, 180, 180, 1));
+    --background-container-right: linear-gradient(45deg, rgba(100, 180, 180, 1), rgba(100, 100, 200, 1));
+    --background-color-input: rgb(220, 200, 200);
+    --background-submit-button: linear-gradient(45deg, rgba(100, 180, 180, 1), rgba(180, 200, 200, 1), rgba(100, 180, 180, 1));
+    
+    --color-h3: rgba(20, 20, 20, 1);
+
+    --text-shadow-heading: 4px 4px 6px rgba(20, 20, 100, 0.4);
+
+    --box-shadow-container-left: 10px 6px 10px rgba(20, 20, 100, 0.3);
+    --box-shadow-container-right: 10px 6px 10px rgba(20, 20, 100, 0.3);
+    --box-shadow-submit-button: 2px 2px 6px rgba(20, 20, 100, 0.8);
+    --box-shadow-submit-button-active: 4px 2px 6px rgba(20, 20, 100, 0);
+
+    --border-submit-button: solid rgb(20, 20, 20) 6px;
+
+}
+
+body {
+
+    background: var(--background-body);
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "left right"
+                                ". .";
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    justify-items: center;
+    padding: 10px 0 10px 0;
+    font-family: var(--font-family);
+
+}
+
+.container-right {
+
+    grid-column: 2;
+    width: 400px;
+    grid-area: right;
+    padding: 50px 50px 80px 50px;
+    border: dashed 10px;
+    background: var(--background-container-right);
+    box-shadow: var(--box-shadow-container-right);
+    
+}
+
+.container-output {
+
+    font-size: 30px;
+    font-family: var(--font-family);
+    text-shadow: var(--text-shadow-heading);
+
+}
+
+.container-left {
+
+    grid-column: 1;
+    width: 400px;
+    text-align: center;
+    grid-area: left;
+    padding: 50px 50px 80px 50px;
+    border: dashed 10px;
+    background: var(--background-container-left);
+    box-shadow: var(--box-shadow-container-left);
+
+}
+
+h1 {
+
+    padding: 0 0 20px 0;
+    font-size: 50px;
+    text-shadow: var(--text-shadow-heading);
+
+}
+
+h3 {
+
+    font-size: 30px;
+    color: var(--color-h3);
+    text-shadow: var(--text-shadow-heading);
+
+}
+
+select {
+
+    height: 50px;
+    width: 250px;    
+    font-size: 20px;
+    font-family: var(--font-family);
+    appearance: none;
+    color: black;
+    background-color: var(--background-color-input);
+
+}
+
+input {
+
+    
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+    font-family: var(--font-family);
+    color: black;    
+    background: var(--background-color-input);
+
+}
+
+input [type="placeholder"] {
+
+    font-size: 15px;
+
+}
+
+#first-name-input {
+
+    width: 200px;
+
+}
+
+#surname-input {
+
+    width: 200px;
+
+}
+
+#days-id {
+
+    width: 70px;
+
+}
+
+.container-submit-button {
+
+    padding: 40px 0 0 0;
+    
+}
+
+.submit-button {
+
+    width: 100px;
+    height: 70px;    
+    font-size: 20px;
+    border: var(--border-submit-button);
+    color: black;
+    box-shadow: var(--box-shadow-submit-button);
+    background: var(--background-submit-button);
+
+}
+
+.submit-button:hover {
+
+    cursor: pointer;
+
+}
+
+.submit-button:active {
+
+    box-shadow: var(--box-shadow-submit-button-active);
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+}
