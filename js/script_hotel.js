@@ -30,7 +30,7 @@ function validateName() {
     // field isn't zero.
     else if (inputName.value != "" && inputSurname.value != "" && inputDays.value < 1) {
         console.log("Days is zero.");
-        alert("You must add one day atleast.")
+        alert("You must add one day atleast.");
     }
     
     // Check if the name form field and the surname form field is empty.
@@ -42,7 +42,6 @@ function validateName() {
     // If all of the form fields are filled, then this alert message will be displayed.
     else {
         console.log("All fields are filled.");
-        alert("Thank you. Enjoy your stay.");
     }
 
 }

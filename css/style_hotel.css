@@ -169,7 +169,19 @@ input [type="placeholder"] {
 
 }
 
-@media screen and (max-width: 900px) {
+.alert-message {
+
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: black;
+    text-shadow: var(--text-shadow-heading);
+
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
 
     .container {
 
@@ -177,6 +189,583 @@ input [type="placeholder"] {
                                     "right";
         grid-template-rows: 1fr 1fr;
 
+        width: 140px;
+        
+    }
+
+    .container-left {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 140px;
+
+    }
+
+    .container-right {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 140px;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    h3 {
+
+        font-size: 20px;
+    
+    }
+
+    input {
+
+        margin-left: -34px;
+    
+    }
+
+    input[type="number"] {
+
+        margin-left: 0;
+    
+    }
+
+    select {
+
+        margin-left: -36px;
+        width: 210px;
+
+    }
+    
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
+
+    .container {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 100%;
+        
+    }
+
+    .container-left {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 140px;
+
+    }
+
+    .container-right {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 140px;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    h3 {
+
+        font-size: 20px;
+    
+    }
+
+    input {
+
+        margin-left: -34px;
+    
+    }
+
+    input[type="number"] {
+
+        margin-left: 0;
+    
+    }
+
+    select {
+
+        margin-left: -36px;
+        width: 210px;
+
+    }
+    
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .container {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 100%;
+        
+    }
+
+    .container-left {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 140px;
+
+    }
+
+    .container-right {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+
+        width: 140px;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    h3 {
+
+        font-size: 20px;
+    
+    }
+
+    input {
+
+        margin-left: -34px;
+    
+    }
+
+    input[type="number"] {
+
+        margin-left: 0;
+    
+    }
+
+    select {
+
+        margin-left: -36px;
+        width: 210px;
+
+    }
+
+}
+
+@media only screen and (min-width : 640px) and (min-height : 360px) {
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "left right"
+                                    ". .";
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        justify-items: center;
+        padding: 2px 0 2px 0;
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .container-left {
+
+        width: 40%;
+        height: 65%;
+
+    }
+
+    .container-heading {
+
+        margin-top: -35px;
+        padding: 0 0 0 0;
+        font-size: 20px;
+
+    }
+    
+    .first-name-container {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #first-name-input {
+
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+
+    }
+
+    .first-name-heading {
+
+        font-size: 90%;
+
+    }
+
+    .surname-container {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .surname-heading {
+
+        text-align: center;
+        font-size: 90%;
+
+    }
+
+    #surname-input {
+
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+
+    }
+
+    .hotel-dropdown-heading {
+
+        font-size: 90%;
+
+    }
+
+    #hotel-select {
+
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+
+    }
+
+    .days-heading {
+
+        font-size: 90%;
+
+    }
+
+    #days-id {
+
+        width: 190px;
+        height: 30px;
+        margin-left: -35px;
+
+    }
+
+    .container-submit-button {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .container-submit-button button {
+
+        width: 120px;
+        height: 60px;
+
+    }
+    
+    .container-right {
+
+        width: 50%;
+        height: 22%;
+
+    }
+
+    .container-output {
+
+        font-size: 22px;
+
+    }
+
+    input {
+
+        font-size: 15px;
+
+    }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    .container {
+
+        grid-template-areas: "left"
+                                    "right";
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 40px;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .container-heading {
+
+        font-size: 50px;
+
+    }
+
+    .container-left {
+
+        grid-area: left;
+        min-width: 760px;
+        height: 460px;
+
+    }
+
+    .container-left form {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;        
+
+    }
+    
+    .first-name-container {
+
+        width: 50%;
+
+    }
+
+    .first-name-heading {
+
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    #first-name-input {
+
+        margin-left: 0;
+        width: 200px;
+        height: 30px;
+
+    }
+
+    .surname-container {
+
+        width: 50%;
+
+    }
+
+    .surname-heading {
+
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    #surname-input {
+
+        margin-left: 0;
+        width: 200px;
+        height: 30px;
+
+    }
+
+    .hotel-dropdown-heading {
+
+        font-size: 30px;
+
+    }
+
+    .container-hotel-dropdown {
+
+        width: 50%;
+
+    }
+
+    #hotel-select {
+
+        width: 200px;
+        height: 50px;
+        margin-left: 0;
+
+    }
+
+    .container-days {
+
+        width: 50%;
+
+    }
+    
+    .days-heading {
+
+        font-size: 30px;
+
+    }
+
+    #days-id {
+
+        margin-left: 0;
+
+    }
+
+    .container-submit-button {
+
+        width: 100%;
+
+    }
+    
+    .container-right {
+
+        grid-area: right;
+        width: 760px;
+        height: 460px;
+
+    }
+
+    .container-output {
+
+        text-align: center;
+        font-size: 40px;
+
+    }
+    
+}
+
+@media only screen and (min-width : 1025px) {
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "left right"
+                                    ". .";
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        justify-items: center;
+        padding: 10px 0 10px 0;
+    
+    }
+    
+    .container-right {
+    
+        grid-column: 2;
+        width: 400px;
+        height: 30%;
+        grid-area: right;
+        padding: 50px 50px 80px 50px;
+        
+    }
+    
+    .container-output {
+    
+        font-size: 30px;
+    
+    }
+    
+    .container-left {
+    
+        grid-column: 1;
+        width: 400px;
+        height: 80%;
+        text-align: center;
+        grid-area: left;
+        padding: 50px 50px 80px 50px;
+    
+    }
+    
+    .container-heading {
+    
+        padding: 0 0 20px 0;
+        font-size: 40px;
+    
+    }
+    
+    .first-name-heading, .surname-heading, .hotel-dropdown-heading, .days-heading {
+    
+        font-size: 30px;
+    
+    }
+    
+    #hotel-select {
+    
+        height: 50px;
+        width: 200px;   
+        font-size: 20px;
+    
+    }
+    
+    input {
+
+        height: 40px;
+        text-align: center;
+        font-size: 17px;
+    
+    }
+    
+    input [type="placeholder"] {
+    
+        font-size: 15px;
+    
+    }
+    
+    #first-name-input {
+    
+        width: 200px;
+    
+    }
+    
+    #surname-input {
+    
+        width: 200px;
+    
+    }
+    
+    #days-id {
+    
+        width: 150px;
+        margin-left: 0;
+    
+    }
+    
+    .container-submit-button {
+    
+        padding: 40px 0 0 0;
+        
+    }
+    
+    .submit-button {
+    
+        width: 100px;
+        height: 70px;    
+        font-size: 20px;
+    
     }
 
 }
